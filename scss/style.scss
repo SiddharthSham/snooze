@@ -1,0 +1,93 @@
+// imports
+@import './fonts.scss';
+
+// sass vars
+$primary: #fff;
+$secondary: #000;
+
+// css vars
+:root {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+// basic reset
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+// loader
+.loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary;
+    color: $primary;
+    z-index: 9999;
+    font-size: 3vw;
+    letter-spacing: 10px;
+}
+
+// base styles
+
+body {
+    background-color: $secondary;
+    color: $primary;
+    font-family: 'Nexa Bold', sans-serif;
+    overflow-x: hidden;
+}
+
+.sans {
+    font-family: 'Nexa Bold', sans-serif !important;
+}
+
+.serif {
+    font-family: "Monument", serif !important;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    left: 0;
+}
+
+.pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 7.5vw;
+    padding: 5rem;
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
+.hello {
+    top: 0;
+}
+
+.desc {
+    top: 100vh;
+}
+
+.final {
+    top: 200vh;
+    display: flex;
+}
