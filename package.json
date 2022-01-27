@@ -20,6 +20,6 @@
   "dependencies": {
     "animejs": "^3.2.0",
     "locomotive-scroll": "^3.5.4",
-    "three": "^0.125.0"
+    "three": "^0.137.0"
   }
 }
